@@ -9,6 +9,15 @@
  */
 const turnMeBaby = str => {
   /* your logic here...*/
+  try {
+    if (typeof(str) != 'string') throw 'Error: this is not a string.'; 
+  } finally {}
+  
+  var nString = "";
+  for (var i = str.length - 1; i >= 0; i--) {
+    nString += str[i];
+  }
+  return nString;
 };
 
 export default turnMeBaby;
